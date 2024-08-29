@@ -1,0 +1,242 @@
+.offers {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.offers_btn {
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  padding: 30px 60px 30px 60px;
+  margin-bottom: 60px;
+  cursor: pointer;
+  color: #FFF;
+  background: #111111;
+  border-color: #FFF;
+  border-style: solid;
+}
+
+.offers_btn:hover {
+  color: #242b37;
+  background-color: #FFF;
+  border-color: #111111;
+}
+
+.offers_footer {
+  align-items: center;
+  height: 370px;
+  background-size: cover;
+  background-image: url("../../Assets/Gallery/homepage/ready-bg-mobile.jpg");
+}
+
+@media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
+  .offers_footer {
+    background-image: url("../../Assets/Gallery/homepage/ready-bg-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: 768px) {
+  .offers_footer {
+    background-image: url("../../Assets/Gallery/homepage/ready-bg-tablet.jpg");
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px) {
+  .offers_footer {
+    background-image: url("../../Assets/Gallery/homepage/ready-bg-tablet@2x.jpg");
+  }
+}
+
+@media (min-width: 1200px) {
+  .offers_footer {
+    background-image: url("../../Assets/Gallery/homepage/ready-bg-desktop.jpg");
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 1200px) {
+  .offers_footer {
+    background-image: url("../../Assets/Gallery/homepage/ready-bg-desktop@2x.jpg");
+  }
+}
+
+.offers_footer_title {
+  max-width: 500px;
+  margin: auto;
+  padding: 80px 20px 40px 20px;
+  color: #FFF;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.4px;
+}
+
+.offers_footer_btn {
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  padding: 30px 60px 30px 60px;
+  cursor: pointer;
+  color: #FFF;
+  background: none;
+  border-color: #FFF;
+  border-style: solid;
+}
+
+.offers_footer_btn:hover {
+  color: #242b37;
+  background-color: #FFF;
+  border-color: #111111;
+}
+
+.event {
+  max-width: 500px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.event_photo {
+  box-shadow: 0 10px 20px rgba(36, 43, 55, 0.3), 0 20px 30px rgba(36, 43, 55, 0.4);
+  margin-bottom: 50px;
+}
+
+.event_title {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.4px;
+}
+
+.event_text {
+  font-size: 18px;
+  line-height: 26px;
+  padding-bottom: 30px;
+}
+
+.nav_btn {
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  padding-bottom: 15px;
+  color: #5c6779;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav_btn:hover {
+  color: #111111;
+  letter-spacing: 4px;
+  font-weight: bolder;
+}
+
+.nav_btn.active::after {
+  content: "";
+  position: absolute;
+  left: 45%;
+  right: 45%;
+  bottom: -3px;
+  width: 10%;
+  height: 2px;
+  background-color: #9e7f66;
+}
+
+.offers_icon_lines {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .offers {
+    background-image: url("../../Assets/Gallery/patterns/pattern-curve-top-right.svg");
+    background-repeat: no-repeat;
+    background-position: -380px 00px;
+  }
+  .offers_icon_lines {
+    display: block;
+    position: relative;
+    left: 170px;
+    top: 38px;
+  }
+  .offers_footer_title {
+    max-width: 700px;
+    font-size: 48px;
+    padding-top: 120px;
+  }
+  .event {
+    display: flex;
+    flex-direction: column;
+  }
+  .event_photo {
+    width: 573px;
+    margin-left: -30px;
+  }
+  .event_title {
+    font-size: 48px;
+  }
+  .event_text {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 30px;
+  }
+  .nav {
+    display: flex;
+    gap: 60px;
+    width: 800px;
+    margin-left: -140px;
+    flex-direction: column;
+  }
+  .nav_btn {
+    font-size: 18px;
+    letter-spacing: 2.5px;
+  }
+  .nav_btn:hover {
+    letter-spacing: 3px;
+  }
+  .nav_btn.active::after {
+    left: 25%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .event {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 80px;
+  }
+  .event_photo {
+    position: absolute;
+    left: 230px;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 270px;
+    gap: 10px;
+  }
+  .nav_desktop {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: left;
+    padding-bottom: 0px;
+  }
+  .nav_btn {
+    padding-bottom: 0px;
+  }
+  .nav_btn.active::after {
+    left: -40%;
+    top: 30%;
+    width: 50%;
+  }
+  .offers_footer {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 500px;
+  }
+  .offers_footer_title {
+    margin-top: 50px;
+    margin-left: 400px;
+  }
+}

@@ -1,0 +1,119 @@
+@import '../../Assets/Scss/variables';
+
+.container{
+    color:$additional_text_color;
+    background-color: $background_color2;
+    text-align: center;
+    padding-top: 72px;
+    padding-bottom: 60px;
+}
+.initiation{
+    max-width: 500px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    &_icon{
+        width: 150px;
+    }
+    &_title{
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.4px;
+    }
+    &_text{
+        font-size: 18px;
+        line-height: 26px;
+        padding-bottom: 45px;
+    }
+}
+.menu{
+     max-width: 500px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    &_photo{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 370px;
+    }
+    &_title{
+        font-size: 26px;
+        line-height: 24px;
+        letter-spacing: -0.25px;
+    }
+    &_text{
+        font-size: 18px;
+        line-height: 26px;
+        padding-bottom: 20px;
+        border-bottom:solid;
+        border-bottom-width: 0.5px;
+        border-bottom-color: $decoration_color2;
+    }
+}
+@media (min-width: 768px){
+    .initiation{
+    max-width: 450px;
+    &_title{
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+    }
+    &_text{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+.menu{
+    display: flex;
+    gap: 60px;
+    border-bottom: solid 0.1px;
+    border-color: $decoration_color2;
+    align-items: center;
+    &_photo{
+    width: 128px;
+    }
+    &_box{
+        max-width: 383px;
+        text-align: left;
+    }
+    &_title{
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.25px;
+    }
+    &_text{
+        font-size: 16px;
+        border: none;
+    }
+}
+}
+@media (min-width: 1200px){
+    .container{
+        padding-top: 250px;
+        display: flex;
+        padding-right: 230px;
+        padding-left: 200px;
+    }
+     .initiation{
+        margin-top: -50px;
+        text-align: left;
+    &_title{
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+    }
+    &_text{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+    .menu{
+        border: none;
+        background-image: url('../../Assets/Gallery/patterns/pattern-divide.svg');
+        background-repeat: no-repeat;
+        background-position: 110px 25px;
+        &_photo{
+            margin-top: -20px;
+        }
+    }
+}

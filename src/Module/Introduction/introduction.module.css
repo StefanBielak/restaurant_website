@@ -1,0 +1,114 @@
+.intro {
+  text-align: center;
+  margin-top: -100px;
+}
+
+.intro_photo {
+  box-shadow: 0 10px 20px rgba(36, 43, 55, 0.3), 0 20px 30px rgba(36, 43, 55, 0.4);
+}
+
+.intro_icon_lines {
+  display: none;
+}
+
+.intro_icon {
+  width: 100px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.intro_title {
+  font-weight: bold;
+  font-size: 32px;
+  padding-left: 84px;
+  padding-right: 84px;
+  line-height: 40px;
+}
+
+.intro_text {
+  font-size: 18px;
+  line-height: 26px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    background-image: url("../../Assets/Gallery/patterns/pattern-curve-top-left.svg"), url("../../Assets/Gallery/patterns/pattern-curve-top-left.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: -380px 200px,510px 1630px;
+    padding-bottom: 100px;
+  }
+  .intro_title {
+    font-weight: bold;
+    font-size: 48px;
+    max-width: 400px;
+    margin: auto;
+    line-height: 48px;
+  }
+  .intro_text {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    max-width: 450px;
+    margin: auto;
+  }
+  .intro_photo {
+    position: relative;
+  }
+  .intro_icon_lines {
+    display: block;
+    position: relative;
+    left: 770px;
+    top: -130px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro {
+    text-align: left;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-image: url("../../Assets/Gallery/patterns/pattern-curve-top-right.svg"), url("../../Assets/Gallery/patterns/pattern-curve-top-left.svg");
+    background-position: 0px 320px, 1580px 1050px;
+    margin-bottom: -200px;
+    background-size: auto, 38%;
+  }
+  .intro_container {
+    display: flex;
+  }
+  .intro_content {
+    margin-left: 85px;
+    margin-top: 180px;
+  }
+  .intro_container:nth-of-type(2) {
+    flex-direction: row-reverse;
+  }
+  .intro_icon {
+    width: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .intro_title {
+    font-size: 48px;
+    padding-left: 0px;
+    padding-right: 50px;
+    line-height: 48px;
+  }
+  .intro_text {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 0px;
+    padding-right: 20px;
+    max-width: 420px;
+    margin-bottom: 150px;
+  }
+  .intro_icon_lines {
+    display: block;
+    position: relative;
+    left: 650px;
+    top: -45px;
+  }
+}
