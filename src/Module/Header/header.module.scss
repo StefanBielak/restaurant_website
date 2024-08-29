@@ -1,0 +1,106 @@
+@import '../../Assets/Scss/variables';
+
+.header{
+  color:$additional_text_color;
+  background-size: cover;
+  background-position: top;
+  height: 1100px;
+  background-image: url('../../Assets/Gallery/homepage/hero-bg-mobile.jpg');
+  @media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
+    background-image: url('../../Assets/Gallery/homepage/hero-bg-mobile@2x.jpg');}
+  @media (min-width: 768px) {
+    background-image: url('../../Assets/Gallery/homepage/hero-bg-tablet.jpg');}
+  @media (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px) {
+    background-image: url('../../Assets/Gallery/homepage/hero-bg-tablet@2x.jpg');}
+  @media (min-width: 1200px) {
+    background-image: url('../../Assets/Gallery/homepage/hero-bg-desktop.jpg');}
+  @media (min-resolution: 192dpi) and (min-width: 1200px) {
+    background-image: url('../../Assets/Gallery/homepage/hero-bg-desktop@2x.jpg');}
+  &_container {
+    padding-top: 440px;
+    text-align: center;
+     margin: auto;
+  }
+  &_logo{
+    padding-bottom: 30px;
+  }
+  &_title {
+    font-weight: lighter;
+    font-size: 40px;
+    margin: auto;
+    line-height: 50px;
+    letter-spacing: 2px;
+    max-width: 327px;
+  }
+  &_text{
+    max-width: 327px;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 1.5px;
+  }
+  &_button{
+    margin-top: 50px;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    padding: 30px 60px 30px 60px;
+    cursor:pointer;
+    color: $additional_text_color;
+    background: none;
+    border-color: $additional_text_color;
+    border-style: solid;
+  }
+  &_button:hover{
+    color:$text_color;
+    background-color: $additional_text_color;
+  }
+}
+@media (min-width: 768px){
+  .header{
+    height: 1300px;
+    &_container {
+    padding-top: 540px;
+    }
+  &_title {
+    font-size: 48px;
+    line-height: 64px;
+  }
+  &_text{
+    max-width: 650px;
+    font-weight:normal;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+  }
+}
+@media (min-width: 1200px){
+  .header{
+  &_container {
+    padding-top: 140px;
+    padding-left: 200px;
+    text-align: left;
+     margin: auto;
+  }
+  &_logo{
+    padding-bottom: 180px;
+  }
+  &_title {
+    font-size: 80px;
+    line-height: 80px;
+    max-width: 530px;
+    margin-left: 0px;
+    padding-bottom: 40px;
+    
+  }
+  &_text{
+    line-height: 30px;
+    margin-left: 0px;
+    max-width: 500px;
+    padding-bottom: 20px;
+  }
+  }
+}
