@@ -65,10 +65,10 @@ function Form({ closeForm }) {
 
     emailjs
       .send(
-        "service_5e78sku",
-        "template_po3v0e8",
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         templateParams,
-        "1cVctjFgnb4QoShuY"
+        process.env.REACT_APP_EMAILJS_USER_ID
       )
       .then(
         (response) => {
